@@ -6,11 +6,11 @@
 
 body {
     background-color: rgba(83, 0, 190, 0.5);
-    min-height: 100vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex: 5;
+    /* flex-wrap: wrap; */
+    /* flex: 5; */
 }
 
 header {
@@ -51,26 +51,17 @@ header nav ul li a {
     color: white;
 }
 
-.container {
-    display: flex;
-    flex-direction: row-reverse;
-    flex-wrap: wrap;
-    flex: 5;
-    min-height: 80vh;
-}
-
 main {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    height: 80%;
     margin: 1%;
-    flex: 4;
+    height: 90vh;
+    outline: 1px solid black;
 }
 
 img {
-    /* display: 16/9; */
-    height: 40vh;
+    height: 20vh;
 }
 
 section {
@@ -80,8 +71,20 @@ section {
 h2 {
     font-size: 32px;
     outline: 1px solid black;
-    width: 120px;
     text-align: right;
+    width: 98%;
+}
+
+h2:first-child {
+    margin-top: 30%;
+}
+
+h2:nth-child(2) {
+
+}
+
+h2:last-child {
+    margin-bottom: 30%;
 }
 
 section.first {
@@ -90,7 +93,7 @@ section.first {
     justify-content: space-around;
     align-items: center;
     height: 50%;
-    width: 73%;
+    width: 98%;
     margin: 1%;
 }
 
@@ -101,7 +104,7 @@ section.second {
     justify-content: space-around;
     align-items: center;
     height: 50%;
-    width: 73%;
+    width: 98%;
     margin: 1%;
 }
 
@@ -110,9 +113,10 @@ aside {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    /* width: 23%; */
-    flex: 1;
+    width: 98%;
+    /* flex: 1; */
     margin: 1%;
+    padding: 1%;
     outline: 1px solid black;
 }
 
@@ -122,6 +126,8 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 10vh;
+    width: 98%;
+    margin: 1%;
     outline: 1px solid black;
 }
 
@@ -134,7 +140,6 @@ footer ul {
 
 footer ul li {
     outline: 1px solid black;
-    /* list-style-type: none; */
     display: inline;
     font-size: 20px;
 }
@@ -142,6 +147,26 @@ footer ul li {
 footer a {
     color: white;
 }
+
+div.mainfoot {
+    display: flex;
+    flex-direction: column;
+    order: 2;
+}
+
+div.aside {
+    display: flex;
+    flex-direction: row;
+    order: 1;
+}
+
+.a {
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+}
+
+
 
 @media screen and (max-width: 768px){
     header {
