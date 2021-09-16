@@ -79,10 +79,6 @@ h2:first-child {
     margin-top: 30%;
 }
 
-h2:nth-child(2) {
-
-}
-
 h2:last-child {
     margin-bottom: 30%;
 }
@@ -95,6 +91,7 @@ section.first {
     height: 50%;
     width: 98%;
     margin: 1%;
+    border-left: 5px solid blue;
 }
 
 
@@ -106,6 +103,7 @@ section.second {
     height: 50%;
     width: 98%;
     margin: 1%;
+    border-left: 5px solid blue;
 }
 
 aside {
@@ -134,8 +132,12 @@ footer {
 footer ul {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     outline: 1px solid black;
-    width: 73%;
+    width: 98%;
+    height: 98%;
+    margin: 1%;
+    border-left: 5px solid blue;
 }
 
 footer ul li {
@@ -164,6 +166,7 @@ div.aside {
     display: flex;
     flex-direction: row;
     height: 90vh;
+    flex: 1 1 4;
 }
 
 
