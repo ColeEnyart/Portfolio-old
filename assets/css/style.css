@@ -6,6 +6,11 @@
 
 body {
     background-color: rgba(83, 0, 190, 0.5);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex: 5;
 }
 
 header {
@@ -29,27 +34,38 @@ nav {
     height: 50px;
 }
 
-header ul {
+header nav ul {
     display: flex;
     justify-content: space-evenly;
     outline: 19x solid black;
     width: 500px;
 }
 
-header ul li {
+header nav ul li {
     display: inline;
     outline: 1px solid black;
     font-size: 24px;
 }
 
-header ul li a {
+header nav ul li a {
     color: white;
+}
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    flex: 5;
+    min-height: 80vh;
 }
 
 main {
     display: flex;
     flex-direction: column;
-    height: 80vh;
+    align-items: flex-end;
+    height: 80%;
+    margin: 1%;
+    flex: 4;
 }
 
 img {
@@ -73,7 +89,9 @@ section.first {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 25%;
+    height: 50%;
+    width: 73%;
+    margin: 1%;
 }
 
 
@@ -83,6 +101,19 @@ section.second {
     justify-content: space-around;
     align-items: center;
     height: 50%;
+    width: 73%;
+    margin: 1%;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 23%; */
+    flex: 1;
+    margin: 1%;
+    outline: 1px solid black;
 }
 
 
@@ -98,7 +129,7 @@ footer ul {
     display: flex;
     justify-content: space-evenly;
     outline: 1px solid black;
-    width: 75%;
+    width: 73%;
 }
 
 footer ul li {
@@ -117,3 +148,4 @@ footer a {
         background-color: red;
     }
 }
+
