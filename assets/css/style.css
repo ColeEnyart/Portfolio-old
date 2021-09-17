@@ -1,3 +1,10 @@
+:root {
+    --oneHundred: 100%;
+    --nintyEight: 98%;
+    --one: 1%;
+    --border: 5px solid darkslateblue;
+}
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,7 +12,7 @@
 }
 
 body {
-    background-color: rgba(83, 0, 190, 0.5);
+    background-color: slategrey;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -17,7 +24,7 @@ header {
     justify-content: space-around;
     align-items: center;
     height: 320px;
-    width: 100%;
+    width: var(--oneHundred);
 }
 
 header section {
@@ -27,6 +34,7 @@ header section {
 
 h1 {
     font-size: 52px;
+    color: darkseagreen;
 }
 
 nav {
@@ -40,8 +48,8 @@ nav {
 header nav ul {
     display: flex;
     justify-content: space-evenly;
-    width: 98%;
-    margin: 1%;
+    width: var(--nintyEight);
+    margin: var(--one);
 }
 
 header nav ul li {
@@ -56,7 +64,7 @@ header nav ul li a {
 main {
     display: flex;
     flex-direction: column;
-    margin: 1%;;
+    margin: var(--one);
     overflow: auto;
     flex: 1;
 }
@@ -66,8 +74,8 @@ img {
 }
 
 a img {
-    height: 100%;
-    width: 100%;
+    height: var(--oneHundred);
+    width: var(--oneHundred);
 }
 
 section.card {
@@ -77,9 +85,9 @@ section.card {
     width: 400px;
 }
 
-/*  */
+/* sizing project images */
 section.card:nth-child(1) {
-    height: 98%;
+    height: var(--nintyEight);
 }
 
 section.card:nth-child(2) {
@@ -100,13 +108,17 @@ div.centered {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 32px;
+    font-size: 48px;
+    font-weight: bolder;
+    color: darkseagreen;
+    background-color: darkslateblue;
 }
 
 h2 {
     font-size: 32px;
     text-align: right;
-    width: 98%;
+    color: darkseagreen;
+    width: var(--nintyEight);
 }
 
 /* Aligning h2 to content */
@@ -127,9 +139,10 @@ section.first {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 98%;
-    margin: 1%;
-    border-left: 5px solid blue;
+    width: var(--nintyEight);
+    margin: var(--one);
+    border-left: var(--border);
+    padding: var(--one);
 }
 
 section.second {
@@ -138,9 +151,9 @@ section.second {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    width: 98%;
-    margin: 1%;
-    border-left: 5px solid blue;
+    width: var(--nintyEight);
+    margin: var(--one);
+    border-left: var(--border);
 }
 
 aside {
@@ -148,9 +161,9 @@ aside {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 98%;
-    margin: 1%;
-    padding: 1%;
+    width: var(--nintyEight);
+    margin: var(--one);
+    padding: var(--one);
 }
 
 footer {
@@ -158,18 +171,18 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 2em;
-    width: 98%;
-    margin: 1%;
+    width: var(--nintyEight);
+    margin: var(--one);
 }
 
 footer ul {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 98%;
-    height: 98%;
-    margin: 1%;
-    border-left: 5px solid blue;
+    width: var(--nintyEight);
+    height: var(--nintyEight);
+    margin: var(--one);
+    border-left: var(--border);
 }
 
 footer ul li {
@@ -185,7 +198,7 @@ div.mainfoot {
     display: flex;
     flex-direction: column;
     order: 2;
-    width: 100%;
+    width: var(--oneHundred);
 }
 
 div.aside {
