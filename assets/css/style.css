@@ -6,7 +6,7 @@
 
 body {
     background-color: rgba(83, 0, 190, 0.5);
-    height: 100vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     /* flex-wrap: wrap; */
@@ -17,8 +17,13 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 20vh;
     outline: 1px solid black;
+}
+
+header section {
+    display: flex;
+    align-items: center;
 }
 
 h1 {
@@ -31,14 +36,15 @@ nav {
     align-items: center;
     outline: 1px solid black;
     width: 33%;
-    height: 50px;
+    height: 33%;
 }
 
 header nav ul {
     display: flex;
     justify-content: space-evenly;
     outline: 19x solid black;
-    width: 500px;
+    width: 98%;
+    margin: 1%;
 }
 
 header nav ul li {
@@ -56,12 +62,21 @@ main {
     flex-direction: column;
     align-items: flex-end;
     margin: 1%;
-    height: 90vh;
+    height: 190vh;
     outline: 1px solid black;
 }
 
 img {
     height: 20vh;
+}
+
+section.card {
+    opacity: .5;
+}
+
+section.card:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 section {
@@ -123,7 +138,7 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
+    height: 20vh;
     width: 98%;
     margin: 1%;
     outline: 1px solid black;
@@ -154,19 +169,21 @@ div.mainfoot {
     display: flex;
     flex-direction: column;
     order: 2;
+    width: 100%;
 }
 
 div.aside {
     display: flex;
     flex-direction: row;
     order: 1;
+    flex: 1 1 20%;
 }
 
 .a {
     display: flex;
     flex-direction: row;
-    height: 90vh;
-    flex: 1 1 4;
+    height: 190vh;
+    flex: 2 2 80%;
 }
 
 
@@ -174,6 +191,16 @@ div.aside {
 @media screen and (max-width: 768px){
     header {
         background-color: red;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer ul {
+        display: flex;
+        flex-direction: column;
     }
 }
 
