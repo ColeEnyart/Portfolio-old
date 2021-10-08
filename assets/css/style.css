@@ -86,20 +86,9 @@ section.card {
     position: relative;
     text-align: center;
     opacity: .5;
-    width: 400px;
-}
-
-/* sizing project images */
-section.card:nth-child(1) {
-    height: var(--nintyEight);
-}
-
-section.card:nth-child(2) {
-    height: 48%;
-}
-
-section.card:nth-child(3) {
-    height: 48%;
+    width: 40%;
+    padding: 20px;
+    height: 50%;
 }
 
 section.card:hover {
@@ -153,8 +142,8 @@ section.first {
 
 section.second {
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    /* flex-direction: column;
+    flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
     width: var(--nintyEight);
@@ -178,7 +167,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 2em;
     width: var(--nintyEight);
     margin: var(--one);
     background-color: darkslateblue;
@@ -223,6 +211,10 @@ div.aside {
     flex-direction: row;
 }
 
+.one {
+    width: 50%;
+}
+
 /* Changes layout to fit smaller width screens */
 @media screen and (max-width: 768px){
     header nav ul {
@@ -237,7 +229,16 @@ div.aside {
 
     section.second {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+    }
+
+    section.card {
+        width: 100%;
+        height: 30%;
+    }
+
+    div.centered {
+        font-size: 24px;
     }
 }
 
